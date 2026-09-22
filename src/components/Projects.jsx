@@ -179,15 +179,12 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-16 md:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-2xl">
-          <div className="flex items-center gap-2 text-xs font-mono font-medium uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">
-            <span>02 // PORTFOLIO WORK</span>
-          </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-            Featured Projects
+            Projects
           </h2>
           <p className="mt-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
             Selected applications spanning AI chatbots, IoT spatial data pipelines, analytics dashboards, and machine learning models.
@@ -214,14 +211,6 @@ export default function Projects() {
                   <span className="inline-flex items-center rounded-full bg-teal-50 px-2.5 py-0.5 text-xs font-medium text-teal-700 dark:bg-teal-950/40 dark:text-teal-300 border border-teal-200/60 dark:border-teal-800/50">
                     {project.badge}
                   </span>
-                  <button
-                    type="button"
-                    onClick={() => setSelectedProject(project)}
-                    className="inline-flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-teal-600 dark:text-zinc-400 dark:hover:text-teal-400 transition-colors"
-                  >
-                    <Info className="h-3.5 w-3.5" />
-                    <span>Details</span>
-                  </button>
                 </div>
 
                 {/* Title */}
@@ -277,9 +266,9 @@ export default function Projects() {
                   <button
                     type="button"
                     onClick={() => setSelectedProject(project)}
-                    className="ml-auto inline-flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+                    className="ml-auto inline-flex items-center gap-1.5 text-xs font-medium text-zinc-600 hover:text-teal-600 dark:text-zinc-400 dark:hover:text-teal-400 transition-colors"
                   >
-                    <span>View Architecture</span>
+                    <span>Details</span>
                     <ArrowUpRight className="h-3.5 w-3.5" />
                   </button>
                 </div>

@@ -83,12 +83,12 @@
 <body class="bg-zinc-50 text-zinc-800 antialiased selection:bg-teal-500/20 selection:text-teal-700 dark:bg-zinc-950 dark:text-zinc-200 dark:selection:bg-teal-400/20 dark:selection:text-teal-300 transition-colors duration-200">
 
   <!-- ==================== NAVBAR ==================== -->
-  <header class="sticky top-0 z-40 w-full border-b border-zinc-200/80 bg-white/85 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-950/85 transition-colors duration-200">
-    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+  <header class="sticky top-0 z-40 w-full border-b border-zinc-200/80 bg-white/80 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-950/80 transition-colors duration-200">
+    <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8">
       
       <!-- Brand Logo -->
       <a href="#hero" class="group flex items-center gap-2 font-mono text-sm font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
-        <span class="flex h-7 w-7 items-center justify-center rounded border border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 text-teal-600 dark:text-teal-400 group-hover:border-teal-500 transition-colors">
+        <span class="flex h-7 w-7 items-center justify-center rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 text-teal-600 dark:text-teal-400 group-hover:border-teal-500 transition-colors">
           <i data-lucide="terminal" class="h-3.5 w-3.5"></i>
         </span>
         <span>chanraksmey<span class="text-teal-600 dark:text-teal-400 font-bold">.ds</span></span>
@@ -145,8 +145,9 @@
   </header>
 
   <!-- ==================== 1. HERO SECTION WITH PROFILE IMAGE ==================== -->
-  <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-28">
-    <div class="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none -z-10"></div>
+  <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+    <!-- Clean Ambient Soft Glow -->
+    <div class="pointer-events-none absolute -top-24 left-1/2 -z-10 h-[380px] w-[540px] -translate-x-1/2 rounded-full bg-teal-500/10 blur-[100px] dark:bg-teal-400/10"></div>
 
     <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       
@@ -161,7 +162,7 @@
               <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"></span>
               <span class="relative inline-flex h-2 w-2 rounded-full bg-teal-500"></span>
             </span>
-            <span>Data Science @ Institute of Technology of Cambodia (ITC)</span>
+            <span>Data Science @ ITC</span>
           </div>
 
           <!-- Hero Heading -->
@@ -176,8 +177,8 @@
 
           <!-- Short Description -->
           <div class="mt-5 max-w-xl">
-            <p className="text-base sm:text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-              I am a Data Science student at the Institute of Technology of Cambodia with skills in Python, Machine Learning, Power BI, and Database Management. Passionate about data analysis and applying technical skills to real-world projects while continuously learning and growing.
+            <p class="text-base sm:text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+              Data Science student at ITC. Passionate about Machine Learning, Data Analytics, and turning complex data into practical insights.
             </p>
           </div>
 
@@ -206,9 +207,6 @@
 
           <!-- Social Links -->
           <div class="mt-8 pt-6 border-t border-zinc-200 dark:border-zinc-800/80">
-            <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-zinc-500 dark:text-zinc-400 mb-3">
-              <span>CONNECT WITH ME:</span>
-            </div>
             <div class="flex flex-wrap items-center gap-3">
               <a href="https://github.com/reaksmey" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-md border border-zinc-200 bg-zinc-50/50 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:border-zinc-400 hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-800 dark:bg-zinc-900/50 dark:text-zinc-300 dark:hover:border-zinc-700 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 transition-colors">
                 <i data-lucide="github" class="h-3.5 w-3.5"></i>
@@ -250,71 +248,27 @@
               <span>Active</span>
             </div>
           </div>
-          <!-- Subtitle label -->
-          <div class="mt-3 flex items-center gap-1.5 text-[11px] font-mono text-zinc-400 dark:text-zinc-500">
-            <i data-lucide="terminal" class="h-3 w-3"></i>
-            <span>~/Khorn_Chanraksmey_Resume.pdf</span>
-          </div>
         </div>
 
       </div>
-
-      <!-- Quick Domain Highlights -->
-      <div class="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <div class="rounded-lg border border-zinc-200 bg-white/70 p-3 dark:border-zinc-800/80 dark:bg-zinc-900/60">
-          <div class="flex items-center gap-2 text-teal-600 dark:text-teal-400 mb-1">
-            <i data-lucide="brain" class="h-4 w-4"></i>
-            <span class="text-xs font-mono font-medium uppercase text-zinc-500 dark:text-zinc-400">Focus</span>
-          </div>
-          <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">AI &amp; Machine Learning</p>
-        </div>
-
-        <div class="rounded-lg border border-zinc-200 bg-white/70 p-3 dark:border-zinc-800/80 dark:bg-zinc-900/60">
-          <div class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 mb-1">
-            <i data-lucide="sparkles" class="h-4 w-4"></i>
-            <span class="text-xs font-mono font-medium uppercase text-zinc-500 dark:text-zinc-400">Analytics</span>
-          </div>
-          <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Power BI &amp; DAX</p>
-        </div>
-
-        <div class="rounded-lg border border-zinc-200 bg-white/70 p-3 dark:border-zinc-800/80 dark:bg-zinc-900/60">
-          <div class="flex items-center gap-2 text-cyan-600 dark:text-cyan-400 mb-1">
-            <i data-lucide="database" class="h-4 w-4"></i>
-            <span class="text-xs font-mono font-medium uppercase text-zinc-500 dark:text-zinc-400">Data</span>
-          </div>
-          <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">PostgreSQL &amp; MySQL</p>
-        </div>
-
-        <div class="rounded-lg border border-zinc-200 bg-white/70 p-3 dark:border-zinc-800/80 dark:bg-zinc-900/60">
-          <div class="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 mb-1">
-            <i data-lucide="code-2" class="h-4 w-4"></i>
-            <span class="text-xs font-mono font-medium uppercase text-zinc-500 dark:text-zinc-400">Code</span>
-          </div>
-          <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Python &amp; C++</p>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- ==================== 2. SKILLS SECTION ==================== -->
   <section id="skills" class="py-16 md:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       
       <div class="max-w-2xl">
-        <div class="flex items-center gap-2 text-xs font-mono font-medium uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">
-          <span>01 // CAPABILITIES</span>
-        </div>
         <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-          Skills &amp; Technical Stack
+          Skills &amp; Technologies
         </h2>
         <p class="mt-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-          Core technologies, mathematical models, and developer tools applied across data science and AI projects.
+          Core tools, languages, and frameworks I use for data science and machine learning.
         </p>
       </div>
 
       <div class="mt-8 flex flex-wrap items-center gap-2">
-        <button onclick="filterSkills('all', this)" class="skill-filter-btn px-3 py-1.5 text-xs font-medium rounded-md transition-colors bg-zinc-900 text-white dark:bg-teal-500 dark:text-zinc-950 shadow-sm">All</button>
+        <button onclick="filterSkills('all', this)" class="skill-filter-btn px-3 py-1.5 text-xs font-medium rounded-md transition-colors bg-zinc-900 text-white dark:bg-teal-500 dark:text-zinc-950 shadow-xs">All</button>
         <button onclick="filterSkills('aiml', this)" class="skill-filter-btn px-3 py-1.5 text-xs font-medium rounded-md transition-colors bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800">AI &amp; ML</button>
         <button onclick="filterSkills('data', this)" class="skill-filter-btn px-3 py-1.5 text-xs font-medium rounded-md transition-colors bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800">Data &amp; Analytics</button>
         <button onclick="filterSkills('dev', this)" class="skill-filter-btn px-3 py-1.5 text-xs font-medium rounded-md transition-colors bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800">Development</button>
@@ -323,138 +277,133 @@
       <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         
         <!-- Programming -->
-        <div class="skill-card dev rounded-lg border border-zinc-200 bg-white p-5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
-          <div class="flex items-center gap-2.5 mb-3">
-            <span class="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
+        <div class="skill-card dev rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
               <i data-lucide="code-2" class="h-4 w-4"></i>
             </span>
             <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Programming</h3>
           </div>
-          <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Core languages for software and scientific computing</p>
+          
           <div class="flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Python</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>SQL</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>C++</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Java</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Python</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">SQL</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">C++</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Java</span>
           </div>
         </div>
 
         <!-- Data Science -->
-        <div class="skill-card data rounded-lg border border-zinc-200 bg-white p-5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
-          <div class="flex items-center gap-2.5 mb-3">
-            <span class="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
+        <div class="skill-card data rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
               <i data-lucide="binary" class="h-4 w-4"></i>
             </span>
             <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Data Science</h3>
           </div>
-          <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Data manipulation, transformation &amp; exploratory analysis</p>
+          
           <div class="flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Pandas</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>NumPy</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Matplotlib</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Plotly</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Pandas</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">NumPy</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Matplotlib</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Plotly</span>
           </div>
         </div>
 
         <!-- Machine Learning -->
-        <div class="skill-card aiml rounded-lg border border-zinc-200 bg-white p-5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
-          <div class="flex items-center gap-2.5 mb-3">
-            <span class="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
+        <div class="skill-card aiml rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
               <i data-lucide="brain" class="h-4 w-4"></i>
             </span>
             <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Machine Learning</h3>
           </div>
-          <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Supervised &amp; unsupervised learning models and neural nets</p>
+          
           <div class="flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>KNN</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>SVM</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Decision Tree</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Random Forest</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>ANN</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>CNN</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>PCA</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">KNN</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">SVM</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Decision Trees</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Random Forest</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">ANN / CNN</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">PCA</span>
           </div>
         </div>
 
         <!-- AI -->
-        <div class="skill-card aiml rounded-lg border border-zinc-200 bg-white p-5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
-          <div class="flex items-center gap-2.5 mb-3">
+        <div class="skill-card aiml rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-2.5 mb-3.5">
             <span class="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
               <i data-lucide="sparkles" class="h-4 w-4"></i>
             </span>
-            <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">AI</h3>
+            <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">AI &amp; NLP</h3>
           </div>
-          <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Generative AI, retrieval pipelines &amp; modern language models</p>
           <div class="flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>RAG</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>LLM</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Prompt Engineering</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Hugging Face</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>NLP</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">RAG</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">LLMs</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Prompt Eng</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Hugging Face</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">NLP</span>
           </div>
         </div>
 
         <!-- Backend -->
-        <div class="skill-card dev rounded-lg border border-zinc-200 bg-white p-5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
-          <div class="flex items-center gap-2.5 mb-3">
-            <span class="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
+        <div class="skill-card dev rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
               <i data-lucide="server" class="h-4 w-4"></i>
             </span>
             <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Backend</h3>
           </div>
-          <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Building fast, high-performance APIs and microservices</p>
           <div class="flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>FastAPI</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Django</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">FastAPI</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Django</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">REST APIs</span>
           </div>
         </div>
 
         <!-- Database -->
-        <div class="skill-card data rounded-lg border border-zinc-200 bg-white p-5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
-          <div class="flex items-center gap-2.5 mb-3">
-            <span class="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
+        <div class="skill-card data rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
               <i data-lucide="database" class="h-4 w-4"></i>
             </span>
             <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Database</h3>
           </div>
-          <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Relational data modeling, querying &amp; geospatial indexing</p>
           <div class="flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>PostgreSQL</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>MySQL</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>PostGIS</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">PostgreSQL</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">MySQL</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">PostGIS</span>
           </div>
         </div>
 
         <!-- Dashboard -->
-        <div class="skill-card data rounded-lg border border-zinc-200 bg-white p-5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
-          <div class="flex items-center gap-2.5 mb-3">
-            <span class="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
+        <div class="skill-card data rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
               <i data-lucide="layout-dashboard" class="h-4 w-4"></i>
             </span>
-            <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Dashboard</h3>
+            <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">BI &amp; Analytics</h3>
           </div>
-          <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Visualizing analytics, business metrics &amp; interactive web tools</p>
           <div class="flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Power BI &amp; DAX</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Metabase</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Streamlit</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Power BI &amp; DAX</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Metabase</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Streamlit</span>
           </div>
         </div>
 
         <!-- Tools -->
-        <div class="skill-card dev rounded-lg border border-zinc-200 bg-white p-5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
-          <div class="flex items-center gap-2.5 mb-3">
-            <span class="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
+        <div class="skill-card dev rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-teal-400">
               <i data-lucide="wrench" class="h-4 w-4"></i>
             </span>
             <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Tools &amp; DevOps</h3>
           </div>
-          <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Development workflow, version control &amp; containerization</p>
           <div class="flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>GitHub</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Docker</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>VS Code</span>
-            <span class="inline-flex items-center gap-1 rounded bg-zinc-100 px-2 py-1 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"><span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>Git</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">GitHub</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Docker</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">VS Code</span>
+            <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 text-xs font-mono text-zinc-700 dark:text-zinc-300">Git</span>
           </div>
         </div>
 
@@ -465,17 +414,14 @@
 
   <!-- ==================== 3. PROJECTS SECTION WITH IMAGE SCREENSHOTS ==================== -->
   <section id="projects" class="py-16 md:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       
       <div class="max-w-2xl">
-        <div class="flex items-center gap-2 text-xs font-mono font-medium uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">
-          <span>02 // PORTFOLIO WORK</span>
-        </div>
         <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-          Featured Projects
+          Projects
         </h2>
         <p class="mt-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-          Selected applications spanning IoT agriculture, sales analytics dashboards, AI chatbots, and machine learning models.
+          Selected work across IoT smart agriculture, business intelligence dashboards, web apps, and machine learning models.
         </p>
       </div>
 
@@ -483,30 +429,36 @@
       <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
         
         <!-- Project 1: AI Smart Farming Competition -->
-        <div class="group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 overflow-hidden transition-all">
-          <div class="relative h-48 w-full overflow-hidden bg-zinc-900 p-4 font-mono text-xs text-zinc-300 border-b border-zinc-800 flex flex-col justify-between">
-            <div class="flex items-center justify-between border-b border-zinc-800 pb-2 text-zinc-400">
+        <div class="group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white shadow-xs hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 overflow-hidden transition-all">
+          <div class="relative h-48 w-full overflow-hidden bg-zinc-900/95 p-4 font-mono text-xs text-zinc-300 border-b border-zinc-800/80 flex flex-col justify-between">
+            <div class="flex items-center justify-between border-b border-zinc-800 pb-2.5 text-zinc-400">
               <div class="flex items-center gap-1.5">
-                <span class="h-2.5 w-2.5 rounded-full bg-red-500/80"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-amber-500/80"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-emerald-500/80"></span>
-                <span class="ml-2 text-[11px] text-zinc-400">smart-farming-iot.py</span>
+                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                <span class="text-[11px] font-mono text-zinc-300">IoT Architecture Pipeline</span>
               </div>
-              <span class="text-[10px] rounded bg-amber-950/80 text-amber-300 px-2 py-0.5 border border-amber-800 font-bold">
-                🏆 1st Place | StatNode
+              <span class="text-[10px] font-semibold rounded bg-amber-500/10 text-amber-300 px-2 py-0.5 border border-amber-500/30">
+                🏆 1st Place Award
               </span>
             </div>
-            <div class="grid grid-cols-6 gap-1.5 py-2">
-              <div class="h-7 rounded bg-teal-900/60 flex items-center justify-center text-[10px] text-teal-300 border border-teal-700/40">7-in-1</div>
-              <div class="h-7 rounded bg-teal-800/70 flex items-center justify-center text-[10px] text-teal-200 border border-teal-600/40">IoT</div>
-              <div class="h-7 rounded bg-emerald-800/80 flex items-center justify-center text-[10px] text-emerald-200 border border-emerald-600/40">PostGIS</div>
-              <div class="h-7 rounded bg-teal-800/70 flex items-center justify-center text-[10px] text-teal-200 border border-teal-600/40">Khmer</div>
-              <div class="h-7 rounded bg-teal-900/60 flex items-center justify-center text-[10px] text-teal-300 border border-teal-700/40">Bot</div>
-              <div class="h-7 rounded bg-cyan-900/60 flex items-center justify-center text-[10px] text-cyan-300 border border-cyan-700/40">NPK</div>
+            <div class="flex items-center justify-between gap-1.5 py-3">
+              <div class="flex-1 rounded-lg bg-zinc-800/80 p-2 text-center border border-zinc-700/50">
+                <p class="text-[10px] text-zinc-400">Sensors</p>
+                <p class="text-xs font-semibold text-teal-300">7-in-1 Soil</p>
+              </div>
+              <span class="text-zinc-500 text-xs font-bold">➔</span>
+              <div class="flex-1 rounded-lg bg-zinc-800/80 p-2 text-center border border-zinc-700/50">
+                <p class="text-[10px] text-zinc-400">Spatial DB</p>
+                <p class="text-xs font-semibold text-teal-300">PostGIS</p>
+              </div>
+              <span class="text-zinc-500 text-xs font-bold">➔</span>
+              <div class="flex-1 rounded-lg bg-zinc-800/80 p-2 text-center border border-zinc-700/50">
+                <p class="text-[10px] text-zinc-400">Alerts</p>
+                <p class="text-xs font-semibold text-teal-300">Khmer Bot</p>
+              </div>
             </div>
-            <div class="flex items-center justify-between text-[10px] text-zinc-400 pt-1 border-t border-zinc-800">
-              <span class="text-teal-400">PostGIS Spatial Mapping</span>
-              <span class="text-zinc-500">Khmer Telegram Bot</span>
+            <div class="flex items-center justify-between text-[10px] text-zinc-400 pt-1.5 border-t border-zinc-800">
+              <span class="text-teal-400 flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-teal-400"></span>Real-time Telemetry</span>
+              <span class="text-zinc-500">StatNode Competition</span>
             </div>
           </div>
 
@@ -515,26 +467,22 @@
               <span class="inline-flex items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-950/40 dark:text-amber-300 border border-amber-200/60 dark:border-amber-800/50 font-semibold">
                 🏆 1st Place Award
               </span>
-              <button onclick="openProjectModal('soil-quality')" class="inline-flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-teal-600 dark:text-zinc-400 dark:hover:text-teal-400 transition-colors">
-                <i data-lucide="info" class="h-3.5 w-3.5"></i>
-                <span>Details</span>
-              </button>
             </div>
 
-            <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
               AI Smart Farming System
             </h3>
 
             <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 flex-1">
-              Precision agriculture system using a 7-in-1 IoT soil sensor with PostGIS mapping and a Khmer Telegram bot for fertilizer recommendations.
+              IoT 7-in-1 soil sensing system with PostGIS mapping and Khmer Telegram bot for precision fertilizer recommendations.
             </p>
 
             <div class="mt-5 flex flex-wrap gap-1.5">
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">7-in-1 IoT Sensor</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">PostGIS</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Khmer Telegram Bot</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">FastAPI</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Python</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">7-in-1 IoT</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">PostGIS</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">Telegram Bot</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">FastAPI</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">Python</span>
             </div>
 
             <div class="mt-6 flex items-center gap-3 pt-4 border-t border-zinc-100 dark:border-zinc-800/80">
@@ -542,8 +490,8 @@
                 <i data-lucide="github" class="h-3.5 w-3.5"></i>
                 <span>GitHub</span>
               </a>
-              <button onclick="openProjectModal('soil-quality')" class="ml-auto inline-flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors">
-                <span>Architecture</span>
+              <button onclick="openProjectModal('soil-quality')" class="ml-auto inline-flex items-center gap-1.5 text-xs font-medium text-zinc-600 hover:text-teal-600 dark:text-zinc-400 dark:hover:text-teal-400 transition-colors">
+                <span>Details</span>
                 <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i>
               </button>
             </div>
@@ -551,36 +499,34 @@
         </div>
 
         <!-- Project 2: Hotel Reservation System (Power BI & DAX) -->
-        <div class="group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 overflow-hidden transition-all">
-          <div class="relative h-48 w-full overflow-hidden bg-zinc-900 p-4 font-mono text-xs text-zinc-300 border-b border-zinc-800 flex flex-col justify-between">
-            <div class="flex items-center justify-between border-b border-zinc-800 pb-2 text-zinc-400">
+        <div class="group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white shadow-xs hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 overflow-hidden transition-all">
+          <div class="relative h-48 w-full overflow-hidden bg-zinc-900/95 p-4 font-mono text-xs text-zinc-300 border-b border-zinc-800/80 flex flex-col justify-between">
+            <div class="flex items-center justify-between border-b border-zinc-800 pb-2.5 text-zinc-400">
               <div class="flex items-center gap-1.5">
-                <span class="h-2.5 w-2.5 rounded-full bg-red-500/80"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-amber-500/80"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-emerald-500/80"></span>
-                <span class="ml-2 text-[11px] text-zinc-400">hotel-sales-dashboard.pbix</span>
+                <span class="h-2 w-2 rounded-full bg-indigo-400"></span>
+                <span class="text-[11px] font-mono text-zinc-300">Power BI &amp; DAX Analytics</span>
               </div>
-              <span class="text-[10px] rounded bg-indigo-950/80 text-indigo-300 px-2 py-0.5 border border-indigo-800">
-                Power BI &amp; DAX
+              <span class="text-[10px] font-semibold rounded bg-indigo-500/10 text-indigo-300 px-2 py-0.5 border border-indigo-500/30">
+                BI Dashboard
               </span>
             </div>
             <div class="grid grid-cols-3 gap-2 py-2">
-              <div class="rounded bg-zinc-800/80 p-2 border border-zinc-700/50">
-                <p class="text-[10px] text-zinc-400">Total Revenue</p>
-                <p class="text-sm font-bold text-emerald-400">$184.5K</p>
+              <div class="rounded-lg bg-zinc-800/80 p-2 text-center border border-zinc-700/50">
+                <p class="text-[10px] text-zinc-400">Revenue</p>
+                <p class="text-xs font-bold text-emerald-400">$184.5K</p>
               </div>
-              <div class="rounded bg-zinc-800/80 p-2 border border-zinc-700/50">
+              <div class="rounded-lg bg-zinc-800/80 p-2 text-center border border-zinc-700/50">
                 <p class="text-[10px] text-zinc-400">Occupancy</p>
-                <p class="text-sm font-bold text-teal-400">87.4%</p>
+                <p class="text-xs font-bold text-teal-400">87.4%</p>
               </div>
-              <div class="rounded bg-zinc-800/80 p-2 border border-zinc-700/50">
+              <div class="rounded-lg bg-zinc-800/80 p-2 text-center border border-zinc-700/50">
                 <p class="text-[10px] text-zinc-400">Bookings</p>
-                <p class="text-sm font-bold text-cyan-400">1,420</p>
+                <p class="text-xs font-bold text-cyan-400">1,420</p>
               </div>
             </div>
-            <div class="flex items-center justify-between text-[10px] text-zinc-400 pt-1 border-t border-zinc-800">
-              <span class="text-indigo-400">CALCULATE(SUM(Sales), ALLEXCEPT)</span>
-              <span class="text-zinc-500">Interactive DAX Measures</span>
+            <div class="flex items-center justify-between text-[10px] text-zinc-400 pt-1.5 border-t border-zinc-800">
+              <span class="text-indigo-300">DAX Measures</span>
+              <span class="text-zinc-500">Interactive KPIs</span>
             </div>
           </div>
 
@@ -589,25 +535,21 @@
               <span class="inline-flex items-center rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-800/50">
                 Analytics &amp; BI
               </span>
-              <button onclick="openProjectModal('school-dashboard')" class="inline-flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-teal-600 dark:text-zinc-400 dark:hover:text-teal-400 transition-colors">
-                <i data-lucide="info" class="h-3.5 w-3.5"></i>
-                <span>Details</span>
-              </button>
             </div>
 
-            <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-              Hotel Reservation System
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+              Hotel Reservation Analytics
             </h3>
 
             <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 flex-1">
-              Built an interactive sales dashboard using Power BI and DAX. Cleaned and analyzed sales data for actionable business insights.
+              Power BI dashboard analyzing booking trends, seasonal revenue KPIs, and cancellation metrics using DAX measures.
             </p>
 
             <div class="mt-5 flex flex-wrap gap-1.5">
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Power BI</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">DAX</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Data Modeling</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">SQL</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">Power BI</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">DAX</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">Data Modeling</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">SQL</span>
             </div>
 
             <div class="mt-6 flex items-center gap-3 pt-4 border-t border-zinc-100 dark:border-zinc-800/80">
@@ -615,8 +557,8 @@
                 <i data-lucide="github" class="h-3.5 w-3.5"></i>
                 <span>GitHub</span>
               </a>
-              <button onclick="openProjectModal('school-dashboard')" class="ml-auto inline-flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors">
-                <span>Architecture</span>
+              <button onclick="openProjectModal('school-dashboard')" class="ml-auto inline-flex items-center gap-1.5 text-xs font-medium text-zinc-600 hover:text-teal-600 dark:text-zinc-400 dark:hover:text-teal-400 transition-colors">
+                <span>Details</span>
                 <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i>
               </button>
             </div>
@@ -624,29 +566,32 @@
         </div>
 
         <!-- Project 3: Adventure Works DW — Power BI Dashboard -->
-        <div class="group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 overflow-hidden transition-all">
-          <div class="relative h-48 w-full overflow-hidden bg-zinc-900 p-4 font-mono text-xs text-zinc-300 border-b border-zinc-800 flex flex-col justify-between">
-            <div class="flex items-center justify-between border-b border-zinc-800 pb-2 text-zinc-400">
+        <div class="group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white shadow-xs hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 overflow-hidden transition-all">
+          <div class="relative h-48 w-full overflow-hidden bg-zinc-900/95 p-4 font-mono text-xs text-zinc-300 border-b border-zinc-800/80 flex flex-col justify-between">
+            <div class="flex items-center justify-between border-b border-zinc-800 pb-2.5 text-zinc-400">
               <div class="flex items-center gap-1.5">
-                <span class="h-2.5 w-2.5 rounded-full bg-red-500/80"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-amber-500/80"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-emerald-500/80"></span>
-                <span class="ml-2 text-[11px] text-zinc-400">adventure-works-dw.sql</span>
+                <span class="h-2 w-2 rounded-full bg-teal-400"></span>
+                <span class="text-[11px] font-mono text-zinc-300">Full-Stack &amp; Data Warehouse</span>
               </div>
-              <span class="text-[10px] rounded bg-teal-950/80 text-teal-300 px-2 py-0.5 border border-teal-800">
-                React + Power BI
+              <span class="text-[10px] font-semibold rounded bg-teal-500/10 text-teal-300 px-2 py-0.5 border border-teal-500/30">
+                React + SQL DW
               </span>
             </div>
-            <div class="space-y-1.5 text-[11px] pt-1">
-              <p class="text-zinc-400">Hotel booking web app with reservation lifecycle</p>
-              <p class="text-teal-400">&gt; Integrated React 18 + Vite frontend with DW schema</p>
-              <div class="rounded bg-zinc-800/80 p-2 text-zinc-200 border border-zinc-700/60 mt-1">
-                <span class="text-emerald-400 font-semibold">Data Warehouse:</span> Dimension &amp; Fact Tables in SQL
+            <div class="grid grid-cols-2 gap-2 py-2">
+              <div class="rounded-lg bg-zinc-800/80 p-2.5 border border-zinc-700/50">
+                <p class="text-[10px] text-zinc-400">Frontend Layer</p>
+                <p class="text-xs font-semibold text-zinc-100">React + Vite</p>
+                <p class="text-[10px] text-teal-400 mt-0.5">Booking Lifecycle</p>
+              </div>
+              <div class="rounded-lg bg-zinc-800/80 p-2.5 border border-zinc-700/50">
+                <p class="text-[10px] text-zinc-400">Analytics Layer</p>
+                <p class="text-xs font-semibold text-zinc-100">SQL Data Warehouse</p>
+                <p class="text-[10px] text-teal-400 mt-0.5">Star Schema ETL</p>
               </div>
             </div>
-            <div class="flex items-center justify-between text-[10px] text-zinc-500 pt-1 border-t border-zinc-800/80">
-              <span>React / Vite Web App</span>
-              <span>Power BI Star Schema</span>
+            <div class="flex items-center justify-between text-[10px] text-zinc-400 pt-1.5 border-t border-zinc-800">
+              <span class="text-teal-400">Star Schema ETL</span>
+              <span class="text-zinc-500">Power BI Reporting</span>
             </div>
           </div>
 
@@ -657,19 +602,19 @@
               </span>
             </div>
 
-            <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
               Adventure Works DW &amp; Hotel App
             </h3>
 
             <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 flex-1">
-              Built a hotel booking web app with React/Vite and implemented robust booking and reservation management backed by data warehouse analytics.
+              Hotel booking web application built with React/Vite, integrated with dimensional SQL data warehouse analytics.
             </p>
 
             <div class="mt-5 flex flex-wrap gap-1.5">
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">React</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Vite</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Power BI</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">SQL Data Warehouse</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">React</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">Vite</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">Power BI</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">SQL DW</span>
             </div>
 
             <div class="mt-6 flex items-center gap-3 pt-4 border-t border-zinc-100 dark:border-zinc-800/80">
@@ -677,20 +622,24 @@
                 <i data-lucide="github" class="h-3.5 w-3.5"></i>
                 <span>GitHub</span>
               </a>
+              <button onclick="openProjectModal('adventure-works')" class="ml-auto inline-flex items-center gap-1.5 text-xs font-medium text-zinc-600 hover:text-teal-600 dark:text-zinc-400 dark:hover:text-teal-400 transition-colors">
+                <span>Details</span>
+                <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i>
+              </button>
             </div>
           </div>
         </div>
 
         <!-- Project 4: Machine Learning Projects -->
-        <div class="group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 overflow-hidden transition-all">
-          <div class="relative h-48 w-full overflow-hidden bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800">
+        <div class="group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white shadow-xs hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 overflow-hidden transition-all">
+          <div class="relative h-48 w-full overflow-hidden bg-zinc-950 border-b border-zinc-800/80">
             <img
               src="public/images/projects/machine-learning.png"
               alt="Machine Learning Plot"
               class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/70 via-transparent to-transparent"></div>
-            <div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-white">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-zinc-950/20 to-transparent"></div>
+            <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-white">
               <span class="rounded bg-black/60 backdrop-blur-sm px-2 py-0.5 border border-white/10">
                 Linear Regression &amp; Loss Curve
               </span>
@@ -705,26 +654,21 @@
               <span class="inline-flex items-center rounded-full bg-teal-50 px-2.5 py-0.5 text-xs font-medium text-teal-700 dark:bg-teal-950/40 dark:text-teal-300 border border-teal-200/60 dark:border-teal-800/50">
                 Core ML
               </span>
-              <button onclick="openProjectModal('ml-projects')" class="inline-flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-teal-600 dark:text-zinc-400 dark:hover:text-teal-400 transition-colors">
-                <i data-lucide="info" class="h-3.5 w-3.5"></i>
-                <span>Details</span>
-              </button>
             </div>
 
-            <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
               Machine Learning Algorithms
             </h3>
 
             <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 flex-1">
-              A collection of machine learning algorithms demonstrating foundational mathematical optimization, algorithms from scratch, and practical data modeling.
+              Foundational machine learning models implemented from scratch in Python with gradient descent and loss visualizations.
             </p>
 
             <div class="mt-5 flex flex-wrap gap-1.5">
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Python</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">NumPy</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Scikit-learn</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Matplotlib</span>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Plotly</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">Python</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">NumPy</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">Scikit-learn</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-xs font-mono text-zinc-700 dark:text-zinc-300">Matplotlib</span>
             </div>
 
             <div class="mt-6 flex items-center gap-3 pt-4 border-t border-zinc-100 dark:border-zinc-800/80">
@@ -732,8 +676,8 @@
                 <i data-lucide="github" class="h-3.5 w-3.5"></i>
                 <span>GitHub</span>
               </a>
-              <button onclick="openProjectModal('ml-projects')" class="ml-auto inline-flex items-center gap-1 text-xs font-medium text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors">
-                <span>Architecture</span>
+              <button onclick="openProjectModal('ml-projects')" class="ml-auto inline-flex items-center gap-1.5 text-xs font-medium text-zinc-600 hover:text-teal-600 dark:text-zinc-400 dark:hover:text-teal-400 transition-colors">
+                <span>Details</span>
                 <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i>
               </button>
             </div>
@@ -747,35 +691,33 @@
 
   <!-- ==================== 4. EXPERIENCE SECTION ==================== -->
   <section id="experience" class="py-16 md:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       
       <div class="max-w-2xl">
-        <div class="flex items-center gap-2 text-xs font-mono font-medium uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">
-          <span>03 // EXPERIENCE &amp; LEADERSHIP</span>
-        </div>
         <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-          Work &amp; Volunteer Experience
+          Experience
         </h2>
         <p class="mt-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-          Professional industry internship and extensive STEM community leadership contributions.
+          Professional internship and STEM community leadership.
         </p>
       </div>
 
-      <!-- Work Experience Card -->
-      <div class="mt-10 max-w-4xl space-y-6">
+      <!-- Work Experience & Volunteer -->
+      <div class="mt-10 space-y-6">
         
-        <div class="relative rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50">
+        <!-- Internship Card -->
+        <div class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-7 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/50">
           <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-4 border-b border-zinc-100 dark:border-zinc-800">
             <div>
-              <div class="flex items-center gap-2">
-                <span class="flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-teal-50 text-teal-600 dark:border-zinc-700 dark:bg-teal-950/50 dark:text-teal-400">
+              <div class="flex items-center gap-2.5">
+                <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 bg-teal-50 text-teal-600 dark:border-zinc-700 dark:bg-teal-950/50 dark:text-teal-400">
                   <i data-lucide="briefcase" class="h-4 w-4"></i>
                 </span>
-                <h3 class="text-lg sm:text-xl font-bold text-zinc-900 dark:text-zinc-100">
+                <h3 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">
                   AI &amp; Dashboard Intern
                 </h3>
               </div>
-              <p class="text-base font-semibold text-teal-600 dark:text-teal-400 mt-1 sm:ml-10">
+              <p class="text-sm font-semibold text-teal-600 dark:text-teal-400 mt-1 sm:ml-10">
                 Sala Tech Pte. Ltd.
               </p>
             </div>
@@ -783,7 +725,7 @@
             <div class="flex flex-wrap items-center gap-2 sm:flex-col sm:items-end sm:gap-1 text-xs text-zinc-500 dark:text-zinc-400">
               <span class="inline-flex items-center gap-1 rounded-full bg-zinc-100 px-2.5 py-0.5 font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 font-mono">
                 <i data-lucide="calendar" class="h-3 w-3"></i>
-                <span>Duration: 3-Month</span>
+                <span>3 Months</span>
               </span>
               <span class="inline-flex items-center gap-1">
                 <i data-lucide="map-pin" class="h-3 w-3"></i>
@@ -793,71 +735,59 @@
           </div>
 
           <div class="mt-5">
-            <h4 class="text-xs font-mono uppercase tracking-wider font-semibold text-zinc-700 dark:text-zinc-300 mb-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider font-semibold text-zinc-500 dark:text-zinc-400 mb-3">
               Key Contributions
             </h4>
-            <ul class="space-y-2.5">
+            <ul class="space-y-2">
               <li class="flex items-start gap-2.5 text-sm text-zinc-600 dark:text-zinc-300">
                 <i data-lucide="check-circle-2" class="h-4 w-4 text-teal-500 mt-0.5 shrink-0"></i>
-                <span>Worked on dashboards for data visualization and reporting.</span>
+                <span>Built interactive BI dashboards for performance metrics and team reporting.</span>
               </li>
               <li class="flex items-start gap-2.5 text-sm text-zinc-600 dark:text-zinc-300">
                 <i data-lucide="check-circle-2" class="h-4 w-4 text-teal-500 mt-0.5 shrink-0"></i>
-                <span>Analyzed data and wrote database queries to support projects.</span>
+                <span>Authored optimized SQL queries and conducted exploratory data analysis.</span>
               </li>
               <li class="flex items-start gap-2.5 text-sm text-zinc-600 dark:text-zinc-300">
                 <i data-lucide="check-circle-2" class="h-4 w-4 text-teal-500 mt-0.5 shrink-0"></i>
-                <span>Assisted with AI-related tasks and worked with the team on project development.</span>
+                <span>Assisted with AI feature development and automated pipeline testing.</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- Volunteer Experiences Accordion / List -->
-        <div class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50">
-          <div class="flex items-center gap-2 mb-4">
-            <i data-lucide="award" class="h-5 w-5 text-teal-600 dark:text-teal-400"></i>
-            <h3 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Volunteer Experience</h3>
+        <!-- Volunteer Experience Card -->
+        <div class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-7 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/50">
+          <div class="flex items-center gap-2.5 mb-4">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-teal-400">
+              <i data-lucide="award" class="h-4 w-4"></i>
+            </span>
+            <h3 class="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100">Volunteer &amp; Community Leadership</h3>
           </div>
-          <div class="space-y-3">
-            <div class="flex flex-col sm:flex-row sm:justify-between border-l-2 border-teal-500 pl-3 py-1">
-              <div>
-                <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Field Researcher | Keo Seima Wildlife Sanctuary</p>
-                <p class="text-xs text-zinc-500 dark:text-zinc-400">Conducted environmental fieldwork and protected zone surveys.</p>
-              </div>
-              <span class="text-xs font-mono text-zinc-500 shrink-0 sm:text-right">Aug 12–14, 2025</span>
+          
+          <div class="space-y-2.5 divide-y divide-zinc-100 dark:divide-zinc-800/60">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-2.5 first:pt-0 gap-1">
+              <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200">Field Researcher | Keo Seima Wildlife Sanctuary</p>
+              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500">Aug 2025</span>
             </div>
 
-            <div class="flex flex-col sm:flex-row sm:justify-between border-l-2 border-teal-500 pl-3 py-1">
-              <div>
-                <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Event Guide | Cambodia STEM Festival</p>
-                <p class="text-xs text-zinc-500 dark:text-zinc-400">Guided visitors and explained science &amp; tech student innovations.</p>
-              </div>
-              <span class="text-xs font-mono text-zinc-500 shrink-0 sm:text-right">Feb 7, 2026</span>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-2.5 gap-1">
+              <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200">Event Guide | Cambodia STEM Festival</p>
+              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500">Feb 2026</span>
             </div>
 
-            <div class="flex flex-col sm:flex-row sm:justify-between border-l-2 border-teal-500 pl-3 py-1">
-              <div>
-                <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Registration Team | National STI Day</p>
-                <p class="text-xs text-zinc-500 dark:text-zinc-400">Handled guest onboarding and tech delegates registration.</p>
-              </div>
-              <span class="text-xs font-mono text-zinc-500 shrink-0 sm:text-right">Mar 26–28, 2026</span>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-2.5 gap-1">
+              <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200">Registration Team | National STI Day</p>
+              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500">Mar 2026</span>
             </div>
 
-            <div class="flex flex-col sm:flex-row sm:justify-between border-l-2 border-teal-500 pl-3 py-1">
-              <div>
-                <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Booth Team | Higher Education &amp; Study Abroad Forum</p>
-                <p class="text-xs text-zinc-500 dark:text-zinc-400">Advised attendees on academic programs and study abroad options.</p>
-              </div>
-              <span class="text-xs font-mono text-zinc-500 shrink-0 sm:text-right">May 23–24, 2026</span>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-2.5 gap-1">
+              <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200">Booth Team | Higher Education &amp; Study Abroad Forum</p>
+              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500">May 2026</span>
             </div>
 
-            <div class="flex flex-col sm:flex-row sm:justify-between border-l-2 border-teal-500 pl-3 py-1">
-              <div>
-                <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Route Team | Run for Border Children's Education</p>
-                <p class="text-xs text-zinc-500 dark:text-zinc-400">Supported course coordination and children's education initiative.</p>
-              </div>
-              <span class="text-xs font-mono text-zinc-500 shrink-0 sm:text-right">Jul 13, 2026</span>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-2.5 gap-1">
+              <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200">Route Team | Run for Border Children's Education</p>
+              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500">Jul 2026</span>
             </div>
           </div>
         </div>
@@ -869,32 +799,29 @@
 
   <!-- ==================== 5. EDUCATION SECTION ==================== -->
   <section id="education" class="py-16 md:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       
       <div class="max-w-2xl">
-        <div class="flex items-center gap-2 text-xs font-mono font-medium uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">
-          <span>04 // ACADEMIC BACKGROUND</span>
-        </div>
         <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
           Education
         </h2>
         <p class="mt-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-          Rigorous academic foundations in data science, mathematics, computing, and statistical modeling.
+          Academic foundation and specialized programs.
         </p>
       </div>
 
-      <div class="mt-10 max-w-4xl space-y-5">
+      <div class="mt-10 space-y-5">
         
         <!-- ITC -->
-        <div class="relative rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50">
+        <div class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-7 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/50">
           <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-4 border-b border-zinc-100 dark:border-zinc-800">
             <div>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2.5">
                 <span class="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200 bg-teal-50 text-teal-600 dark:border-zinc-700 dark:bg-teal-950/50 dark:text-teal-400">
                   <i data-lucide="graduation-cap" class="h-5 w-5"></i>
                 </span>
                 <div>
-                  <h3 class="text-lg sm:text-xl font-bold text-zinc-900 dark:text-zinc-100">
+                  <h3 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">
                     Institute of Technology of Cambodia (ITC)
                   </h3>
                   <p class="text-sm font-semibold text-teal-600 dark:text-teal-400">
@@ -909,7 +836,7 @@
                 <i data-lucide="calendar" class="h-3 w-3"></i>
                 <span>2024 - Present</span>
               </span>
-              <span class="inline-flex items-center gap-1 text-zinc-500">
+              <span class="inline-flex items-center gap-1 text-zinc-400 dark:text-zinc-500">
                 <i data-lucide="map-pin" class="h-3 w-3"></i>
                 <span>Phnom Penh, Cambodia</span>
               </span>
@@ -917,42 +844,45 @@
           </div>
 
           <div class="mt-5">
-            <h4 class="text-xs font-mono uppercase tracking-wider font-semibold text-zinc-800 dark:text-zinc-200 mb-2 flex items-center gap-1.5">
+            <h4 class="text-xs font-mono uppercase tracking-wider font-semibold text-zinc-500 dark:text-zinc-400 mb-2.5 flex items-center gap-1.5">
               <i data-lucide="book-open" class="h-3.5 w-3.5 text-teal-600 dark:text-teal-400"></i>
               <span>Core Subject Areas</span>
             </h4>
             <div class="flex flex-wrap gap-2">
-              <span class="inline-flex items-center rounded-md border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-800 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-zinc-200">Machine Learning</span>
-              <span class="inline-flex items-center rounded-md border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-800 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-zinc-200">Statistics</span>
-              <span class="inline-flex items-center rounded-md border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-800 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-zinc-200">Numerical Methods</span>
-              <span class="inline-flex items-center rounded-md border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-800 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-zinc-200">Database Management</span>
-              <span class="inline-flex items-center rounded-md border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-800 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-zinc-200">Python</span>
-              <span class="inline-flex items-center rounded-md border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-800 dark:border-zinc-700/80 dark:bg-zinc-800/80 dark:text-zinc-200">Data Analysis</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300">Machine Learning</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300">Statistics</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300">Numerical Methods</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300">Database Systems</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300">Python</span>
+              <span class="rounded-md bg-zinc-100 dark:bg-zinc-800/80 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300">Data Analytics</span>
             </div>
           </div>
         </div>
 
         <!-- TUX Global Institute -->
-        <div class="relative rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50">
+        <div class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-7 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/50">
           <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <div>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2.5">
                 <span class="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200 bg-emerald-50 text-emerald-600 dark:border-zinc-700 dark:bg-emerald-950/50 dark:text-emerald-400">
                   <i data-lucide="award" class="h-5 w-5"></i>
                 </span>
                 <div>
-                  <h3 class="text-lg sm:text-xl font-bold text-zinc-900 dark:text-zinc-100">
+                  <h3 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">
                     TUX Global Institute
                   </h3>
                   <p class="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
-                    Data Analysis — 75% Scholarship
+                    Data Analysis — 75% Merit Scholarship
                   </p>
                 </div>
               </div>
             </div>
 
             <div class="flex items-center text-xs font-mono text-zinc-500 dark:text-zinc-400">
-              <span>2025 - 2026</span>
+              <span class="inline-flex items-center gap-1 rounded-full bg-zinc-100 px-2.5 py-0.5 dark:bg-zinc-800">
+                <i data-lucide="calendar" class="h-3 w-3"></i>
+                <span>2025 - 2026</span>
+              </span>
             </div>
           </div>
         </div>
@@ -964,23 +894,19 @@
 
     <!-- ==================== 6. CERTIFICATES SECTION ==================== -->
   <section id="certificates" class="py-16 md:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
-          <div class="flex items-center gap-2 text-xs font-mono font-medium uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">
-            <i data-lucide="award" class="h-3.5 w-3.5"></i>
-            <span>05 // CREDENTIALS &amp; LICENSES</span>
-          </div>
           <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
             Certificates &amp; Specializations
           </h2>
           <p class="mt-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400 max-w-2xl">
-            Verified professional credentials and coursework from Google, IBM, University of Michigan, Coursera, Udemy, and ASEAN Secretariat with verified Credential IDs.
+            Verified credentials in AI, Data Science, and Software Development.
           </p>
         </div>
 
-        <div class="text-xs font-mono text-zinc-600 dark:text-zinc-400 flex items-center gap-1.5 self-start md:self-auto px-3.5 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700">
+        <div class="text-xs font-mono text-zinc-600 dark:text-zinc-400 flex items-center gap-1.5 self-start md:self-auto px-3 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700">
           <i data-lucide="shield-check" class="h-3.5 w-3.5 text-teal-500"></i>
           <span class="font-semibold text-zinc-900 dark:text-zinc-100">9 Verified Credentials</span>
         </div>
@@ -988,21 +914,21 @@
 
       <!-- Filter tabs -->
       <div class="mt-8 flex flex-wrap gap-2" id="cert-filter-buttons">
-        <button onclick="filterCerts('all', this)" class="cert-tab-btn active-tab px-3.5 py-1.5 text-xs font-medium rounded-lg bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-sm transition-colors">All (9)</button>
-        <button onclick="filterCerts('ai-ml', this)" class="cert-tab-btn px-3.5 py-1.5 text-xs font-medium rounded-lg bg-zinc-100 text-zinc-600 hover:bg-zinc-200/80 hover:text-zinc-900 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200 transition-colors">AI &amp; Machine Learning</button>
-        <button onclick="filterCerts('data-science', this)" class="cert-tab-btn px-3.5 py-1.5 text-xs font-medium rounded-lg bg-zinc-100 text-zinc-600 hover:bg-zinc-200/80 hover:text-zinc-900 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200 transition-colors">Data Science &amp; Analytics</button>
-        <button onclick="filterCerts('programming', this)" class="cert-tab-btn px-3.5 py-1.5 text-xs font-medium rounded-lg bg-zinc-100 text-zinc-600 hover:bg-zinc-200/80 hover:text-zinc-900 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200 transition-colors">Programming &amp; Foundations</button>
-        <button onclick="filterCerts('bi', this)" class="cert-tab-btn px-3.5 py-1.5 text-xs font-medium rounded-lg bg-zinc-100 text-zinc-600 hover:bg-zinc-200/80 hover:text-zinc-900 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200 transition-colors">Business Intelligence</button>
+        <button onclick="filterCerts('all', this)" class="cert-tab-btn active-tab px-3 py-1.5 text-xs font-medium rounded-md bg-zinc-900 text-white dark:bg-teal-500 dark:text-zinc-950 shadow-xs transition-colors">All (9)</button>
+        <button onclick="filterCerts('ai-ml', this)" class="cert-tab-btn px-3 py-1.5 text-xs font-medium rounded-md bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200 transition-colors">AI &amp; ML</button>
+        <button onclick="filterCerts('data-science', this)" class="cert-tab-btn px-3 py-1.5 text-xs font-medium rounded-md bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200 transition-colors">Data Science</button>
+        <button onclick="filterCerts('programming', this)" class="cert-tab-btn px-3 py-1.5 text-xs font-medium rounded-md bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200 transition-colors">Programming</button>
+        <button onclick="filterCerts('bi', this)" class="cert-tab-btn px-3 py-1.5 text-xs font-medium rounded-md bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200 transition-colors">BI &amp; Analytics</button>
       </div>
 
       <!-- Certificates Grid -->
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-5" id="certs-grid">
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4" id="certs-grid">
         
         <!-- Cert 1: Google AI Fundamentals -->
-        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200/90 bg-white p-5 shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/90 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all" data-category="ai-ml">
+        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all" data-category="ai-ml">
           <div>
-            <div class="flex items-start gap-3.5">
-              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 shadow-xs">
                 <svg class="h-5 w-5" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                   <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -1012,498 +938,405 @@
               </div>
               <div class="flex-1 min-w-0">
                 <div class="flex items-center justify-between gap-2">
-                  <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
+                  <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug truncate">
                     AI Fundamentals
                   </h3>
-                </div>
-                <p class="mt-0.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">Google</p>
-                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="calendar" class="h-3 w-3"></i>
-                    <span>Issued Sep 2026 · Expires Sep 2026</span>
-                  </span>
-                  <span class="inline-flex items-center gap-1 rounded bg-sky-50 px-1.5 py-0.5 text-[11px] font-medium text-sky-700 dark:bg-sky-950/40 dark:text-sky-300 border border-sky-200/50 dark:border-sky-900/40">
+                  <span class="inline-flex items-center rounded bg-sky-50 px-1.5 py-0.5 text-[10px] font-medium text-sky-700 dark:bg-sky-950/40 dark:text-sky-300 border border-sky-200/50 dark:border-sky-900/40 shrink-0">
                     Coursera
                   </span>
                 </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  Google · <span class="font-mono">Sep 2026</span>
+                </p>
               </div>
             </div>
 
-            <!-- Credential ID -->
-            <div class="mt-3.5 flex items-center justify-between rounded-md bg-zinc-50 px-3 py-1.5 text-xs text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
-              <span class="font-mono text-[11px] truncate">
-                Credential ID: <strong class="text-zinc-800 dark:text-zinc-200">DYXI2SZTRSMK</strong>
-              </span>
-              <button onclick="copyCredential('DYXI2SZTRSMK', this)" class="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">
-                <i data-lucide="copy" class="h-3 w-3"></i>
-                <span>Copy</span>
-              </button>
-            </div>
-
-            <!-- Skills -->
-            <div class="mt-3.5">
-              <p class="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mb-1.5">Skills:</p>
-              <div class="flex flex-wrap gap-1.5">
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">AI Fundamentals</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Artificial Intelligence</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Machine Learning Concepts</span>
-              </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">AI Fundamentals</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Artificial Intelligence</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Machine Learning</span>
             </div>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
-            <button onclick="openCertModal('google-ai')" class="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline font-medium">
-              View details
+          <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between gap-2">
+            <button onclick="copyCredential('DYXI2SZTRSMK', this)" class="inline-flex items-center gap-1 rounded px-2 py-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800 transition-colors" title="Copy Credential ID">
+              <i data-lucide="copy" class="h-3 w-3"></i>
+              <span>ID: DYXI2SZTRSMK</span>
             </button>
-            <a href="https://coursera.org/verify/DYXI2SZTRSMK" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors">
-              <span>Show credential</span>
-              <i data-lucide="external-link" class="h-3 w-3 text-zinc-400"></i>
-            </a>
+            <div class="flex items-center gap-2">
+              <button onclick="openCertModal('google-ai')" class="text-xs text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300">
+                Details
+              </button>
+              <a href="https://coursera.org/verify/DYXI2SZTRSMK" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                <span>Verify</span>
+                <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Cert 2: Python Machine Learning: From Beginner to Pro -->
-        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200/90 bg-white p-5 shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/90 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all" data-category="ai-ml">
+        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all" data-category="ai-ml">
           <div>
-            <div class="flex items-start gap-3.5">
-              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-800/80 text-violet-600 dark:text-violet-400 font-bold text-sm shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-800/80 text-violet-600 dark:text-violet-400 font-bold text-sm shadow-xs">
                 U
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
-                  Python Machine Learning: From Beginner to Pro
-                </h3>
-                <p class="mt-0.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">Udemy Free Courses</p>
-                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="calendar" class="h-3 w-3"></i>
-                    <span>Issued Jul 2026</span>
-                  </span>
-                  <span class="inline-flex items-center gap-1 rounded bg-purple-50 px-1.5 py-0.5 text-[11px] font-medium text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200/50 dark:border-purple-900/40">
+                <div class="flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug truncate">
+                    Python Machine Learning: Beginner to Pro
+                  </h3>
+                  <span class="inline-flex items-center rounded bg-purple-50 px-1.5 py-0.5 text-[10px] font-medium text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200/50 dark:border-purple-900/40 shrink-0">
                     Udemy
                   </span>
                 </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  Udemy Free Courses · <span class="font-mono">Jul 2026</span>
+                </p>
               </div>
             </div>
 
-            <!-- Credential ID -->
-            <div class="mt-3.5 flex items-center justify-between rounded-md bg-zinc-50 px-3 py-1.5 text-xs text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
-              <span class="font-mono text-[11px] truncate">
-                Credential ID: <strong class="text-zinc-800 dark:text-zinc-200">UC-976f8cc7...</strong>
-              </span>
-              <button onclick="copyCredential('UC-976f8cc7-a29e-4d01-a20f-25661cc46cd0', this)" class="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">
-                <i data-lucide="copy" class="h-3 w-3"></i>
-                <span>Copy</span>
-              </button>
-            </div>
-
-            <!-- Skills -->
-            <div class="mt-3.5">
-              <p class="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mb-1.5">Skills:</p>
-              <div class="flex flex-wrap gap-1.5">
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Basic machine learning</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Python</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Model Training</span>
-              </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Basic Machine Learning</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Python</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Model Training</span>
             </div>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
-            <button onclick="openCertModal('udemy-python-ml')" class="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline font-medium">
-              View details
+          <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between gap-2">
+            <button onclick="copyCredential('UC-976f8cc7-a29e-4d01-a20f-25661cc46cd0', this)" class="inline-flex items-center gap-1 rounded px-2 py-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800 transition-colors" title="Copy Credential ID">
+              <i data-lucide="copy" class="h-3 w-3"></i>
+              <span class="truncate max-w-[120px]">ID: UC-976f8cc7...</span>
             </button>
-            <a href="https://ude.my/UC-976f8cc7-a29e-4d01-a20f-25661cc46cd0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors">
-              <span>Show credential</span>
-              <i data-lucide="external-link" class="h-3 w-3 text-zinc-400"></i>
-            </a>
+            <div class="flex items-center gap-2">
+              <button onclick="openCertModal('udemy-python-ml')" class="text-xs text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300">
+                Details
+              </button>
+              <a href="https://ude.my/UC-976f8cc7-a29e-4d01-a20f-25661cc46cd0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                <span>Verify</span>
+                <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Cert 3: NumPy, SciPy, Matplotlib & Pandas A-Z -->
-        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200/90 bg-white p-5 shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/90 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all" data-category="data-science">
+        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all" data-category="data-science">
           <div>
-            <div class="flex items-start gap-3.5">
-              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal-50 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-800/80 text-teal-600 dark:text-teal-400 font-bold text-xs shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-teal-50 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-800/80 text-teal-600 dark:text-teal-400 font-bold text-xs shadow-xs">
                 NX
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
-                  NumPy, SciPy, Matplotlib &amp; Pandas A-Z: Machine Learning
-                </h3>
-                <p class="mt-0.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">Nexoma</p>
-                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="calendar" class="h-3 w-3"></i>
-                    <span>Issued Nov 2025 · Expires Nov 2030</span>
-                  </span>
-                  <span class="inline-flex items-center gap-1 rounded bg-teal-50 px-1.5 py-0.5 text-[11px] font-medium text-teal-700 dark:bg-teal-950/40 dark:text-teal-300 border border-teal-200/50 dark:border-teal-900/40">
-                    Udemy Verified
+                <div class="flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug truncate">
+                    NumPy, SciPy, Matplotlib &amp; Pandas A-Z
+                  </h3>
+                  <span class="inline-flex items-center rounded bg-teal-50 px-1.5 py-0.5 text-[10px] font-medium text-teal-700 dark:bg-teal-950/40 dark:text-teal-300 border border-teal-200/50 dark:border-teal-900/40 shrink-0">
+                    Udemy
                   </span>
                 </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  Nexoma · <span class="font-mono">Nov 2025</span>
+                </p>
               </div>
             </div>
 
-            <!-- Credential ID -->
-            <div class="mt-3.5 flex items-center justify-between rounded-md bg-zinc-50 px-3 py-1.5 text-xs text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
-              <span class="font-mono text-[11px] truncate">
-                Credential ID: <strong class="text-zinc-800 dark:text-zinc-200">UC-159cdcc5...</strong>
-              </span>
-              <button onclick="copyCredential('UC-159cdcc5-61b1-4fb8-aa5c-6716bac852c1', this)" class="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">
-                <i data-lucide="copy" class="h-3 w-3"></i>
-                <span>Copy</span>
-              </button>
-            </div>
-
-            <!-- Skills -->
-            <div class="mt-3.5">
-              <p class="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mb-1.5">Skills:</p>
-              <div class="flex flex-wrap gap-1.5">
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">NumPy</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">SciPy</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Matplotlib</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Pandas</span>
-              </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">NumPy</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">SciPy</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Matplotlib</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Pandas</span>
             </div>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
-            <button onclick="openCertModal('udemy-numpy')" class="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline font-medium">
-              View details
+          <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between gap-2">
+            <button onclick="copyCredential('UC-159cdcc5-61b1-4fb8-aa5c-6716bac852c1', this)" class="inline-flex items-center gap-1 rounded px-2 py-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800 transition-colors" title="Copy Credential ID">
+              <i data-lucide="copy" class="h-3 w-3"></i>
+              <span class="truncate max-w-[120px]">ID: UC-159cdcc5...</span>
             </button>
-            <a href="https://ude.my/UC-159cdcc5-61b1-4fb8-aa5c-6716bac852c1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors">
-              <span>Show credential</span>
-              <i data-lucide="external-link" class="h-3 w-3 text-zinc-400"></i>
-            </a>
+            <div class="flex items-center gap-2">
+              <button onclick="openCertModal('udemy-numpy')" class="text-xs text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300">
+                Details
+              </button>
+              <a href="https://ude.my/UC-159cdcc5-61b1-4fb8-aa5c-6716bac852c1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                <span>Verify</span>
+                <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Cert 4: Master class on Data Science using Python A-Z for ML -->
-        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200/90 bg-white p-5 shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/90 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all" data-category="data-science">
+        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all" data-category="data-science">
           <div>
-            <div class="flex items-start gap-3.5">
-              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-800/80 text-violet-600 dark:text-violet-400 font-bold text-sm shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-800/80 text-violet-600 dark:text-violet-400 font-bold text-sm shadow-xs">
                 U
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
-                  2025 Master class on Data Science using Python A-Z for ML
-                </h3>
-                <p class="mt-0.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">Udemy</p>
-                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="calendar" class="h-3 w-3"></i>
-                    <span>Issued Aug 2025</span>
-                  </span>
-                  <span class="inline-flex items-center gap-1 rounded bg-purple-50 px-1.5 py-0.5 text-[11px] font-medium text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200/50 dark:border-purple-900/40">
-                    Course Completion
+                <div class="flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug truncate">
+                    Data Science using Python A-Z for ML
+                  </h3>
+                  <span class="inline-flex items-center rounded bg-purple-50 px-1.5 py-0.5 text-[10px] font-medium text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200/50 dark:border-purple-900/40 shrink-0">
+                    Udemy
                   </span>
                 </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  Udemy · <span class="font-mono">Aug 2025</span>
+                </p>
               </div>
             </div>
 
-            <!-- Skills -->
-            <div class="mt-3.5">
-              <p class="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mb-1.5">Skills:</p>
-              <div class="flex flex-wrap gap-1.5">
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Data Science</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Python</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Machine Learning A-Z</span>
-              </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Data Science</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Python</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Machine Learning</span>
             </div>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
-            <button onclick="openCertModal('udemy-ds-master')" class="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline font-medium">
-              View details
-            </button>
-            <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors">
-              <span>Show credential</span>
-              <i data-lucide="external-link" class="h-3 w-3 text-zinc-400"></i>
-            </a>
+          <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] font-mono text-zinc-400 dark:text-zinc-500">Course Completion</span>
+            <div class="flex items-center gap-2">
+              <button onclick="openCertModal('udemy-ds-master')" class="text-xs text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300">
+                Details
+              </button>
+              <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                <span>Verify</span>
+                <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Cert 5: What is Data Science? (IBM / Coursera) -->
-        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200/90 bg-white p-5 shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/90 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all" data-category="data-science">
+        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all" data-category="data-science">
           <div>
-            <div class="flex items-start gap-3.5">
-              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-600 dark:text-blue-400 font-black text-xs tracking-wider shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-600 dark:text-blue-400 font-black text-xs tracking-wider shadow-xs">
                 IBM
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
-                  What is Data Science?
-                </h3>
-                <p class="mt-0.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">IBM</p>
-                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="calendar" class="h-3 w-3"></i>
-                    <span>Issued Aug 2025</span>
-                  </span>
-                  <span class="inline-flex items-center gap-1 rounded bg-sky-50 px-1.5 py-0.5 text-[11px] font-medium text-sky-700 dark:bg-sky-950/40 dark:text-sky-300 border border-sky-200/50 dark:border-sky-900/40">
-                    Coursera Verified
+                <div class="flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug truncate">
+                    What is Data Science?
+                  </h3>
+                  <span class="inline-flex items-center rounded bg-sky-50 px-1.5 py-0.5 text-[10px] font-medium text-sky-700 dark:bg-sky-950/40 dark:text-sky-300 border border-sky-200/50 dark:border-sky-900/40 shrink-0">
+                    Coursera
                   </span>
                 </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  IBM · <span class="font-mono">Aug 2025</span>
+                </p>
               </div>
             </div>
 
-            <!-- Credential ID -->
-            <div class="mt-3.5 flex items-center justify-between rounded-md bg-zinc-50 px-3 py-1.5 text-xs text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
-              <span class="font-mono text-[11px] truncate">
-                Credential ID: <strong class="text-zinc-800 dark:text-zinc-200">TQPP9N2FDVGB</strong>
-              </span>
-              <button onclick="copyCredential('TQPP9N2FDVGB', this)" class="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">
-                <i data-lucide="copy" class="h-3 w-3"></i>
-                <span>Copy</span>
-              </button>
-            </div>
-
-            <!-- Skills -->
-            <div class="mt-3.5">
-              <p class="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mb-1.5">Skills:</p>
-              <div class="flex flex-wrap gap-1.5">
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Data Science Methodology</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Big Data</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Data Analysis</span>
-              </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Data Science Methodology</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Big Data</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Data Analysis</span>
             </div>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
-            <button onclick="openCertModal('ibm-what-is-ds')" class="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline font-medium">
-              View details
+          <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between gap-2">
+            <button onclick="copyCredential('TQPP9N2FDVGB', this)" class="inline-flex items-center gap-1 rounded px-2 py-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800 transition-colors" title="Copy Credential ID">
+              <i data-lucide="copy" class="h-3 w-3"></i>
+              <span>ID: TQPP9N2FDVGB</span>
             </button>
-            <a href="https://coursera.org/verify/TQPP9N2FDVGB" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors">
-              <span>Show credential</span>
-              <i data-lucide="external-link" class="h-3 w-3 text-zinc-400"></i>
-            </a>
+            <div class="flex items-center gap-2">
+              <button onclick="openCertModal('ibm-what-is-ds')" class="text-xs text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300">
+                Details
+              </button>
+              <a href="https://coursera.org/verify/TQPP9N2FDVGB" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                <span>Verify</span>
+                <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Cert 6: Python Programming: Build a Strong Foundation -->
-        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200/90 bg-white p-5 shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/90 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all" data-category="programming">
+        <!-- Cert 6: Python Programming: Build a Strong Foundation in Coding -->
+        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all" data-category="programming">
           <div>
-            <div class="flex items-start gap-3.5">
-              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-800/80 text-violet-600 dark:text-violet-400 font-bold text-sm shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-800/80 text-violet-600 dark:text-violet-400 font-bold text-sm shadow-xs">
                 U
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
-                  Python Programming: Build a Strong Foundation in Coding
-                </h3>
-                <p class="mt-0.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">Udemy</p>
-                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="calendar" class="h-3 w-3"></i>
-                    <span>Issued Jan 2025 · Expired May 2025</span>
-                  </span>
-                  <span class="inline-flex items-center gap-1 rounded bg-purple-50 px-1.5 py-0.5 text-[11px] font-medium text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200/50 dark:border-purple-900/40">
-                    Udemy Verified
+                <div class="flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug truncate">
+                    Python Programming: Foundation in Coding
+                  </h3>
+                  <span class="inline-flex items-center rounded bg-purple-50 px-1.5 py-0.5 text-[10px] font-medium text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200/50 dark:border-purple-900/40 shrink-0">
+                    Udemy
                   </span>
                 </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  Udemy · <span class="font-mono">Jan 2025</span>
+                </p>
               </div>
             </div>
 
-            <!-- Credential ID -->
-            <div class="mt-3.5 flex items-center justify-between rounded-md bg-zinc-50 px-3 py-1.5 text-xs text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
-              <span class="font-mono text-[11px] truncate">
-                Credential ID: <strong class="text-zinc-800 dark:text-zinc-200">0004</strong>
-              </span>
-              <button onclick="copyCredential('0004', this)" class="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">
-                <i data-lucide="copy" class="h-3 w-3"></i>
-                <span>Copy</span>
-              </button>
-            </div>
-
-            <!-- Skills -->
-            <div class="mt-3.5">
-              <p class="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mb-1.5">Skills:</p>
-              <div class="flex flex-wrap gap-1.5">
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Python Coding</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Control Flow</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Algorithms</span>
-              </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Python Coding</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Control Flow</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Algorithms</span>
             </div>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
-            <button onclick="openCertModal('udemy-foundations')" class="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline font-medium">
-              View details
+          <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between gap-2">
+            <button onclick="copyCredential('0004', this)" class="inline-flex items-center gap-1 rounded px-2 py-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800 transition-colors" title="Copy Credential ID">
+              <i data-lucide="copy" class="h-3 w-3"></i>
+              <span>ID: 0004</span>
             </button>
-            <a href="https://www.udemy.com/certificate/UC-0004/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors">
-              <span>Show credential</span>
-              <i data-lucide="external-link" class="h-3 w-3 text-zinc-400"></i>
-            </a>
+            <div class="flex items-center gap-2">
+              <button onclick="openCertModal('udemy-foundations')" class="text-xs text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300">
+                Details
+              </button>
+              <a href="https://www.udemy.com/certificate/UC-0004/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                <span>Verify</span>
+                <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Cert 7: Engineering and Data Science Essentials -->
-        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200/90 bg-white p-5 shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/90 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all" data-category="programming">
+        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all" data-category="programming">
           <div>
-            <div class="flex items-start gap-3.5">
-              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-800/80 text-violet-600 dark:text-violet-400 font-bold text-sm shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-800/80 text-violet-600 dark:text-violet-400 font-bold text-sm shadow-xs">
                 U
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
-                  Engineering and Data Science Essentials
-                </h3>
-                <p class="mt-0.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">Udemy</p>
-                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="calendar" class="h-3 w-3"></i>
-                    <span>Issued Jan 2025 · Expired Apr 2025</span>
-                  </span>
-                  <span class="inline-flex items-center gap-1 rounded bg-purple-50 px-1.5 py-0.5 text-[11px] font-medium text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200/50 dark:border-purple-900/40">
-                    Udemy Verified
+                <div class="flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug truncate">
+                    Engineering &amp; Data Science Essentials
+                  </h3>
+                  <span class="inline-flex items-center rounded bg-purple-50 px-1.5 py-0.5 text-[10px] font-medium text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200/50 dark:border-purple-900/40 shrink-0">
+                    Udemy
                   </span>
                 </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  Udemy · <span class="font-mono">Jan 2025</span>
+                </p>
               </div>
             </div>
 
-            <!-- Credential ID -->
-            <div class="mt-3.5 flex items-center justify-between rounded-md bg-zinc-50 px-3 py-1.5 text-xs text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
-              <span class="font-mono text-[11px] truncate">
-                Credential ID: <strong class="text-zinc-800 dark:text-zinc-200">UC-0004</strong>
-              </span>
-              <button onclick="copyCredential('UC-0004', this)" class="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">
-                <i data-lucide="copy" class="h-3 w-3"></i>
-                <span>Copy</span>
-              </button>
-            </div>
-
-            <!-- Skills -->
-            <div class="mt-3.5">
-              <p class="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mb-1.5">Skills:</p>
-              <div class="flex flex-wrap gap-1.5">
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Engineering Essentials</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Data Science</span>
-              </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Engineering Essentials</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Data Science</span>
             </div>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
-            <button onclick="openCertModal('udemy-eng-ds')" class="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline font-medium">
-              View details
+          <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between gap-2">
+            <button onclick="copyCredential('UC-0004', this)" class="inline-flex items-center gap-1 rounded px-2 py-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800 transition-colors" title="Copy Credential ID">
+              <i data-lucide="copy" class="h-3 w-3"></i>
+              <span>ID: UC-0004</span>
             </button>
-            <a href="https://www.udemy.com/certificate/UC-0004/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors">
-              <span>Show credential</span>
-              <i data-lucide="external-link" class="h-3 w-3 text-zinc-400"></i>
-            </a>
+            <div class="flex items-center gap-2">
+              <button onclick="openCertModal('udemy-eng-ds')" class="text-xs text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300">
+                Details
+              </button>
+              <a href="https://www.udemy.com/certificate/UC-0004/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                <span>Verify</span>
+                <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Cert 8: SAP Analytics Cloud Training (ASEAN Secretariat) -->
-        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200/90 bg-white p-5 shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/90 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all" data-category="bi">
+        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all" data-category="bi">
           <div>
-            <div class="flex items-start gap-3.5">
-              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/80 text-emerald-600 dark:text-emerald-400 font-bold text-[10px] shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/80 text-emerald-600 dark:text-emerald-400 font-bold text-[10px] shadow-xs">
                 ASEAN
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
-                  SAP Analytics Cloud Training
-                </h3>
-                <p class="mt-0.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">The ASEAN Secretariat</p>
-                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="calendar" class="h-3 w-3"></i>
-                    <span>Issued Apr 2025 · Expired May 2025</span>
-                  </span>
-                  <span class="inline-flex items-center gap-1 rounded bg-emerald-50 px-1.5 py-0.5 text-[11px] font-medium text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border border-emerald-200/50 dark:border-emerald-900/40">
-                    Verified Program
+                <div class="flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug truncate">
+                    SAP Analytics Cloud Training
+                  </h3>
+                  <span class="inline-flex items-center rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] font-medium text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border border-emerald-200/50 dark:border-emerald-900/40 shrink-0">
+                    ASEAN
                   </span>
                 </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  The ASEAN Secretariat · <span class="font-mono">Apr 2025</span>
+                </p>
               </div>
             </div>
 
-            <!-- Credential ID -->
-            <div class="mt-3.5 flex items-center justify-between rounded-md bg-zinc-50 px-3 py-1.5 text-xs text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
-              <span class="font-mono text-[11px] truncate">
-                Credential ID: <strong class="text-zinc-800 dark:text-zinc-200">9.KHORN CHANRAKSMEY</strong>
-              </span>
-              <button onclick="copyCredential('9.KHORN CHANRAKSMEY', this)" class="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">
-                <i data-lucide="copy" class="h-3 w-3"></i>
-                <span>Copy</span>
-              </button>
-            </div>
-
-            <!-- Skills -->
-            <div class="mt-3.5">
-              <p class="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mb-1.5">Skills:</p>
-              <div class="flex flex-wrap gap-1.5">
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">SAP Analytics Cloud</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Enterprise BI</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Data Analysis</span>
-              </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">SAP Analytics Cloud</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Enterprise BI</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Data Analysis</span>
             </div>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
-            <button onclick="openCertModal('asean-sap')" class="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline font-medium">
-              View details
+          <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between gap-2">
+            <button onclick="copyCredential('9.KHORN CHANRAKSMEY', this)" class="inline-flex items-center gap-1 rounded px-2 py-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800 transition-colors" title="Copy Credential ID">
+              <i data-lucide="copy" class="h-3 w-3"></i>
+              <span class="truncate max-w-[120px]">ID: 9.KHORN...</span>
             </button>
-            <a href="https://www.linkedin.com/in/khorn-chanraksmey-4317022bb/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors">
-              <span>Show credential</span>
-              <i data-lucide="external-link" class="h-3 w-3 text-zinc-400"></i>
-            </a>
+            <div class="flex items-center gap-2">
+              <button onclick="openCertModal('asean-sap')" class="text-xs text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300">
+                Details
+              </button>
+              <a href="https://www.linkedin.com/in/khorn-chanraksmey-4317022bb/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                <span>Verify</span>
+                <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Cert 9: Python Data Structures (University of Michigan / Coursera) -->
-        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200/90 bg-white p-5 shadow-sm hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/90 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all" data-category="programming">
+        <div class="cert-card group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-5 shadow-xs hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700 transition-all" data-category="programming">
           <div>
-            <div class="flex items-start gap-3.5">
-              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#00274C] border border-[#ffcb05]/40 text-[#FFCB05] font-black text-sm shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#00274C] border border-[#ffcb05]/40 text-[#FFCB05] font-black text-sm shadow-xs">
                 M
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
-                  Python Data Structures
-                </h3>
-                <p class="mt-0.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">University of Michigan</p>
-                <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                  <span class="flex items-center gap-1">
-                    <i data-lucide="calendar" class="h-3 w-3"></i>
-                    <span>Issued Apr 2025</span>
-                  </span>
-                  <span class="inline-flex items-center gap-1 rounded bg-sky-50 px-1.5 py-0.5 text-[11px] font-medium text-sky-700 dark:bg-sky-950/40 dark:text-sky-300 border border-sky-200/50 dark:border-sky-900/40">
-                    Coursera Verified
+                <div class="flex items-center justify-between gap-2">
+                  <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug truncate">
+                    Python Data Structures
+                  </h3>
+                  <span class="inline-flex items-center rounded bg-sky-50 px-1.5 py-0.5 text-[10px] font-medium text-sky-700 dark:bg-sky-950/40 dark:text-sky-300 border border-sky-200/50 dark:border-sky-900/40 shrink-0">
+                    Coursera
                   </span>
                 </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  Univ of Michigan · <span class="font-mono">Apr 2025</span>
+                </p>
               </div>
             </div>
 
-            <!-- Credential ID -->
-            <div class="mt-3.5 flex items-center justify-between rounded-md bg-zinc-50 px-3 py-1.5 text-xs text-zinc-600 dark:bg-zinc-800/60 dark:text-zinc-400 border border-zinc-100 dark:border-zinc-800">
-              <span class="font-mono text-[11px] truncate">
-                Credential ID: <strong class="text-zinc-800 dark:text-zinc-200">TUT1MIBYSBA5</strong>
-              </span>
-              <button onclick="copyCredential('TUT1MIBYSBA5', this)" class="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">
-                <i data-lucide="copy" class="h-3 w-3"></i>
-                <span>Copy</span>
-              </button>
-            </div>
-
-            <!-- Skills -->
-            <div class="mt-3.5">
-              <p class="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mb-1.5">Skills:</p>
-              <div class="flex flex-wrap gap-1.5">
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Python Data Structures</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Dictionaries &amp; Tuples</span>
-                <span class="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">Lists &amp; File Processing</span>
-              </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Data Structures</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">Dictionaries &amp; Tuples</span>
+              <span class="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-300">File Processing</span>
             </div>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
-            <button onclick="openCertModal('umich-data-structures')" class="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline font-medium">
-              View details
+          <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between gap-2">
+            <button onclick="copyCredential('TUT1MIBYSBA5', this)" class="inline-flex items-center gap-1 rounded px-2 py-1 text-[11px] font-mono text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800 transition-colors" title="Copy Credential ID">
+              <i data-lucide="copy" class="h-3 w-3"></i>
+              <span>ID: TUT1MIBYSBA5</span>
             </button>
-            <a href="https://coursera.org/verify/TUT1MIBYSBA5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-white transition-colors">
-              <span>Show credential</span>
-              <i data-lucide="external-link" class="h-3 w-3 text-zinc-400"></i>
-            </a>
+            <div class="flex items-center gap-2">
+              <button onclick="openCertModal('umich-data-structures')" class="text-xs text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300">
+                Details
+              </button>
+              <a href="https://coursera.org/verify/TUT1MIBYSBA5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition-colors">
+                <span>Verify</span>
+                <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -1514,182 +1347,108 @@
 
   <!-- ==================== 7. CONTACT SECTION ==================== -->
   <section id="contact" class="py-16 md:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       
-      <div class="flex items-center gap-2 text-xs font-mono font-medium uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">
-        <span>06 // INQUIRIES</span>
+      <div class="max-w-2xl">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+          Contact
+        </h2>
+        <p class="mt-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+          Have a project, question, or opportunity? Feel free to reach out directly through any of the channels below.
+        </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         
-        <!-- Left info -->
-        <div class="lg:col-span-5 space-y-6">
-          <div>
-            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-              Let's Connect
-            </h2>
-            <blockquote class="mt-3 text-sm sm:text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-              "I am a Data Science student at the Institute of Technology of Cambodia with skills in Python, Machine Learning, Power BI, and Database Management. Passionate about data analysis and applying technical skills to real-world projects."
-            </blockquote>
-          </div>
-
-          <div class="space-y-3 pt-2">
-            
-            <!-- Email -->
-            <div class="flex items-center justify-between rounded-lg border border-zinc-200 bg-white p-3.5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50">
-              <div class="flex items-center gap-3">
-                <div class="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-rose-500 dark:border-zinc-700 dark:bg-zinc-800">
-                  <i data-lucide="mail" class="h-4 w-4"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">Email</p>
-                  <a href="mailto:chanraksmeykhorn@gmail.com" class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors break-all">
-                    chanraksmeykhorn@gmail.com
-                  </a>
-                </div>
-              </div>
-              <button onclick="copyEmailDirect()" id="copy-email-btn" class="rounded p-1.5 text-zinc-500 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800" title="Copy email address">
-                <i data-lucide="copy" class="h-4 w-4" id="copy-icon"></i>
-              </button>
+        <!-- Email -->
+        <div class="flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-rose-500 dark:border-zinc-700 dark:bg-zinc-800">
+              <i data-lucide="mail" class="h-4 w-4"></i>
             </div>
-
-            <!-- Phone -->
-            <div class="flex items-center justify-between rounded-lg border border-zinc-200 bg-white p-3.5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50">
-              <div class="flex items-center gap-3">
-                <div class="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-emerald-500 dark:border-zinc-700 dark:bg-zinc-800">
-                  <i data-lucide="phone" class="h-4 w-4"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">Phone</p>
-                  <a href="tel:+855966512225" class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
-                    +855 96 651 2225
-                  </a>
-                </div>
-              </div>
-              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500">Phnom Penh</span>
+            <div class="min-w-0">
+              <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">Email</p>
+              <a href="mailto:chanraksmeykhorn@gmail.com" class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors truncate block">
+                chanraksmeykhorn@gmail.com
+              </a>
             </div>
-
-            <!-- Website -->
-            <a href="https://khornchanraksmey.vercel.app" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-lg border border-zinc-200 bg-white p-3.5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all">
-              <div class="flex items-center gap-3">
-                <div class="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-teal-400">
-                  <i data-lucide="globe" class="h-4 w-4"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">Portfolio Domain</p>
-                  <p class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400">khornchanraksmey.vercel.app</p>
-                </div>
-              </div>
-              <i data-lucide="external-link" class="h-4 w-4 text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300"></i>
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/khorn-chanraksmey-4317022bb/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-lg border border-zinc-200 bg-white p-3.5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all">
-              <div class="flex items-center gap-3">
-                <div class="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-blue-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-blue-400">
-                  <i data-lucide="linkedin" class="h-4 w-4"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">LinkedIn</p>
-                  <p class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400">Khorn Chanraksmey</p>
-                </div>
-              </div>
-              <i data-lucide="external-link" class="h-4 w-4 text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300"></i>
-            </a>
-
-            <!-- Telegram -->
-            <a href="https://t.me/reaksmey" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-lg border border-zinc-200 bg-white p-3.5 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all">
-              <div class="flex items-center gap-3">
-                <div class="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-sky-500 dark:border-zinc-700 dark:bg-zinc-800">
-                  <i data-lucide="send" class="h-4 w-4"></i>
-                </div>
-                <div>
-                  <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">Telegram</p>
-                  <p class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400">t.me/reaksmey</p>
-                </div>
-              </div>
-              <i data-lucide="external-link" class="h-4 w-4 text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300"></i>
-            </a>
-
           </div>
+          <button onclick="copyEmailDirect()" id="copy-email-btn" class="shrink-0 rounded p-1.5 text-zinc-500 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800 transition-colors" title="Copy email address">
+            <i data-lucide="copy" class="h-4 w-4" id="copy-email-icon"></i>
+          </button>
         </div>
 
-        <!-- Right form -->
-        <div class="lg:col-span-7">
-          <div class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50">
-            
-            <div class="flex items-center gap-2 mb-4">
-              <i data-lucide="message-square" class="h-4 w-4 text-teal-600 dark:text-teal-400"></i>
-              <h3 class="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                Send a Message
-              </h3>
+        <!-- Phone -->
+        <div class="flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-emerald-500 dark:border-zinc-700 dark:bg-zinc-800">
+              <i data-lucide="phone" class="h-4 w-4"></i>
             </div>
-
-            <div id="contact-success" class="hidden rounded-lg border border-emerald-200 bg-emerald-50/80 p-5 text-center dark:border-emerald-800/80 dark:bg-emerald-950/40">
-              <i data-lucide="check-circle-2" class="mx-auto h-8 w-8 text-emerald-500"></i>
-              <h4 class="mt-2 text-sm font-semibold text-emerald-900 dark:text-emerald-100">
-                Message Sent Successfully!
-              </h4>
-              <p class="mt-1 text-xs text-emerald-700 dark:text-emerald-300">
-                Thank you for reaching out! Chanraksmey will review your note and respond promptly.
-              </p>
-              <button type="button" onclick="resetContactForm()" class="mt-4 inline-flex items-center rounded-md border border-emerald-300 bg-white px-3 py-1.5 text-xs font-medium text-emerald-800 hover:bg-emerald-50 dark:border-emerald-700 dark:bg-zinc-900 dark:text-emerald-200">
-                Send another message
-              </button>
+            <div>
+              <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">Phone</p>
+              <a href="tel:+855966512225" class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                +855 96 651 2225
+              </a>
             </div>
-
-            <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
-              <div>
-                <label for="contact-name" class="block text-xs font-mono font-medium uppercase text-zinc-700 dark:text-zinc-300 mb-1">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="contact-name"
-                  required
-                  placeholder="Your name"
-                  class="w-full rounded-md border border-zinc-200 bg-zinc-50/50 px-3.5 py-2 text-sm text-zinc-900 placeholder:text-zinc-400 focus:border-teal-500 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-500 dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:bg-zinc-800 transition-colors"
-                />
-              </div>
-
-              <div>
-                <label for="contact-email" class="block text-xs font-mono font-medium uppercase text-zinc-700 dark:text-zinc-300 mb-1">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="contact-email"
-                  required
-                  placeholder="your.email@example.com"
-                  class="w-full rounded-md border border-zinc-200 bg-zinc-50/50 px-3.5 py-2 text-sm text-zinc-900 placeholder:text-zinc-400 focus:border-teal-500 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-500 dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:bg-zinc-800 transition-colors"
-                />
-              </div>
-
-              <div>
-                <label for="contact-message" class="block text-xs font-mono font-medium uppercase text-zinc-700 dark:text-zinc-300 mb-1">
-                  Message
-                </label>
-                <textarea
-                  id="contact-message"
-                  rows="4"
-                  required
-                  placeholder="Hi Chanraksmey, I came across your portfolio and wanted to connect..."
-                  class="w-full rounded-md border border-zinc-200 bg-zinc-50/50 px-3.5 py-2 text-sm text-zinc-900 placeholder:text-zinc-400 focus:border-teal-500 focus:bg-white focus:outline-none focus:ring-1 focus:ring-teal-500 dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:bg-zinc-800 transition-colors resize-none"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                id="contact-submit-btn"
-                class="inline-flex w-full items-center justify-center gap-2 rounded-md bg-zinc-900 py-2.5 px-4 text-sm font-medium text-white shadow-sm hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 dark:bg-teal-500 dark:text-zinc-950 dark:hover:bg-teal-400 transition-colors"
-              >
-                <i data-lucide="send" class="h-4 w-4"></i>
-                <span>Send Message</span>
-              </button>
-            </form>
-
           </div>
+          <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500 shrink-0">Phnom Penh</span>
         </div>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/khorn-chanraksmey-4317022bb/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-blue-600 dark:border-zinc-700 dark:bg-zinc-800">
+              <i data-lucide="linkedin" class="h-4 w-4"></i>
+            </div>
+            <div>
+              <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">LinkedIn</p>
+              <p class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400">Khorn Chanraksmey</p>
+            </div>
+          </div>
+          <i data-lucide="external-link" class="h-4 w-4 text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300"></i>
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/reaksmey" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-sky-500 dark:border-zinc-700 dark:bg-zinc-800">
+              <i data-lucide="send" class="h-4 w-4"></i>
+            </div>
+            <div>
+              <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">Telegram</p>
+              <p class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400">t.me/reaksmey</p>
+            </div>
+          </div>
+          <i data-lucide="external-link" class="h-4 w-4 text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300"></i>
+        </a>
+
+        <!-- Portfolio Website -->
+        <a href="https://khornchanraksmey.vercel.app" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-teal-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-teal-400">
+              <i data-lucide="globe" class="h-4 w-4"></i>
+            </div>
+            <div class="min-w-0">
+              <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">Portfolio Domain</p>
+              <p class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 truncate">khornchanraksmey.vercel.app</p>
+            </div>
+          </div>
+          <i data-lucide="external-link" class="h-4 w-4 text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300"></i>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/reaksmey" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4 shadow-sm hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/50 dark:hover:border-zinc-700 transition-all">
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+              <i data-lucide="github" class="h-4 w-4"></i>
+            </div>
+            <div>
+              <p class="text-xs font-mono text-zinc-500 dark:text-zinc-400">GitHub</p>
+              <p class="text-xs sm:text-sm font-medium text-zinc-900 dark:text-zinc-100 group-hover:text-teal-600 dark:group-hover:text-teal-400">github.com/reaksmey</p>
+            </div>
+          </div>
+          <i data-lucide="external-link" class="h-4 w-4 text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300"></i>
+        </a>
 
       </div>
 
@@ -1698,7 +1457,7 @@
 
   <!-- ==================== 8. FOOTER ==================== -->
   <footer class="border-t border-zinc-200/80 bg-white/50 dark:border-zinc-800/80 dark:bg-zinc-950/50 py-10 transition-colors">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
         
         <div class="flex items-center gap-2 text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
@@ -2121,8 +1880,8 @@
       });
     }
 
-    // Contact Form
-        function copyEmail() {
+    // Contact Copy Handler
+    function copyEmail() {
       navigator.clipboard.writeText('chanraksmeykhorn@gmail.com');
       const icon = document.getElementById('copy-icon');
       icon.setAttribute('data-lucide', 'check');
@@ -2174,6 +1933,21 @@
           'Executive Storytelling: Clean, accessible dashboard layout tailored for general managers'
         ],
         technologies: ['Power BI', 'DAX', 'SQL', 'Data Modeling'],
+        github: 'https://github.com/reaksmey',
+        demo: null
+      },
+      'adventure-works': {
+        title: 'Adventure Works DW & Hotel App',
+        tagline: 'Hotel Booking Web Application & Analytics Warehouse',
+        badge: 'React + Power BI',
+        category: 'Web App & Data Warehouse',
+        longDescription: 'Developed an end-to-end hotel booking platform using React and Vite, backed by an analytical data warehouse modeling sales, bookings, and customer dimensions.',
+        highlights: [
+          'Full-Stack Frontend: Dynamic booking and reservation interfaces with React 18 and Vite',
+          'Data Warehouse Schema: Dimension and fact table architecture for multi-year booking cycles',
+          'BI Analytics: Connected Power BI dashboards to track occupancy trends and revenue KPIs'
+        ],
+        technologies: ['React', 'Vite', 'Power BI', 'SQL Data Warehouse', 'JavaScript'],
         github: 'https://github.com/reaksmey',
         demo: null
       },
@@ -2432,39 +2206,18 @@
         closeCertModal();
       }
     });
-      function copyEmailDirect() {
+    function copyEmailDirect() {
       navigator.clipboard.writeText('chanraksmeykhorn@gmail.com').then(() => {
-        const btn = document.getElementById('btn-copy-email');
-        if (btn) {
-          btn.innerHTML = '<i data-lucide="check" class="h-3 w-3 text-teal-500"></i><span class="text-teal-600 dark:text-teal-400">Copied</span>';
+        const icon = document.getElementById('copy-email-icon');
+        if (icon) {
+          icon.setAttribute('data-lucide', 'check');
           lucide.createIcons();
           setTimeout(() => {
-            btn.innerHTML = '<i data-lucide="copy" class="h-3 w-3"></i><span>Copy</span>';
+            icon.setAttribute('data-lucide', 'copy');
             lucide.createIcons();
           }, 2000);
         }
       });
-    }
-    function handleContactSubmit(e) {
-      e.preventDefault();
-      const btn = document.getElementById('contact-submit-btn');
-      btn.innerHTML = '<span>Sending...</span>';
-      btn.disabled = true;
-
-      setTimeout(() => {
-        document.getElementById('contact-form').classList.add('hidden');
-        document.getElementById('contact-success').classList.remove('hidden');
-        btn.innerHTML = '<i data-lucide="send" class="h-4 w-4"></i><span>Send Message</span>';
-        btn.disabled = false;
-        lucide.createIcons();
-      }, 500);
-    }
-
-    function resetContactForm() {
-      document.getElementById('contact-form').reset();
-      document.getElementById('contact-form').classList.remove('hidden');
-      document.getElementById('contact-success').classList.add('hidden');
-      lucide.createIcons();
     }
 
 </script>

@@ -28,9 +28,9 @@ export default function Hero({ onOpenResume }) {
   };
 
   return (
-    <section id="hero" className="relative pt-12 pb-20 md:pt-20 md:pb-28">
-      {/* Subtle background grid pattern */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none -z-10" />
+    <section id="hero" className="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+      {/* Clean Ambient Soft Glow */}
+      <div className="pointer-events-none absolute -top-24 left-1/2 -z-10 h-[380px] w-[540px] -translate-x-1/2 rounded-full bg-teal-500/10 blur-[100px] dark:bg-teal-400/10" />
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         
@@ -93,9 +93,6 @@ export default function Hero({ onOpenResume }) {
 
             {/* Social / Direct Connect Links */}
             <div className="mt-8 pt-6 border-t border-zinc-200 dark:border-zinc-800/80">
-              <div className="flex flex-wrap items-center gap-2 text-xs font-mono text-zinc-500 dark:text-zinc-400 mb-3">
-                <span>CONNECT WITH ME:</span>
-              </div>
               <div className="flex flex-wrap items-center gap-3">
                 <a
                   href={profileData.socials.github}
@@ -166,11 +163,6 @@ export default function Hero({ onOpenResume }) {
                 <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
                 <span>Active</span>
               </div>
-            </div>
-
-            <div className="mt-3 flex items-center gap-1.5 text-[11px] font-mono text-zinc-400 dark:text-zinc-500">
-              <Terminal className="h-3 w-3" />
-              <span>~/chanraksmey.pdf</span>
             </div>
           </div>
 

@@ -3,8 +3,8 @@ export const profileData = {
   fullName: "Khorn Chanraksmey",
   title: "Data Science Student | AI & Machine Learning Enthusiast",
   headline: "Data Science Student | AI & Machine Learning Enthusiast",
-  shortBio: "I am a Data Science student at the Institute of Technology of Cambodia with skills in Python, Machine Learning, Power BI, and Database Management. Passionate about data analysis and applying technical skills to real-world projects while continuously learning and growing.",
-  status: "Data Science @ Institute of Technology of Cambodia",
+  shortBio: "Data Science student at ITC. Passionate about Machine Learning, Data Analytics, and turning complex data into practical insights.",
+  status: "Data Science @ ITC",
   location: "Dangkao, Phnom Penh",
   phone: "+855 96 651 2225",
   email: "chanraksmeykhorn@gmail.com",
@@ -20,6 +20,6 @@ export const profileData = {
   resume: {
     fileName: "Khorn_Chanraksmey_Resume.pdf",
     fileUrl: "/Khorn_Chanraksmey_Resume.pdf",
-    summary: "Data Science student at ITC with strong skills in Python, Machine Learning, Power BI, and Database Management. Passionate about data analysis and applying technical skills to real-world projects.",
+    summary: "Data Science student at ITC specializing in Python, Machine Learning, Power BI, and Database Management.",
   }
 };
